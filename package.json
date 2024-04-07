@@ -1,9 +1,9 @@
 {
-  "name": "web_dev_internship_project",
+  "name": "aeonaxy-internship-assignment",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rjshrivastav.github.io/web_dev_internship_project",
+  "homepage": "https://rjshrivastav.github.io/aeonaxy-internship-assignment",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
