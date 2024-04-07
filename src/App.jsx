@@ -7,9 +7,9 @@ import EmailVarification from './components/EmailVarification';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/aeonaxy-internship-assignment'>
       <Routes>
-        <Route path="/" exact element={<Signup />} />
+        <Route path="/aeonaxy-internship-assignment" exact element={<Signup />} />
         <Route path="/profilecreation" element={<ProfileCreation  />} />
         <Route path="/selectcards" element={<Cards />} />
         <Route path="/emailvarification" element={<EmailVarification />} />
