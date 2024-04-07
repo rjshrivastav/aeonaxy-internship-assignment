@@ -16,21 +16,21 @@ const Cards = () => {
     {
       id: 1,
       title: "I'm a designer looking to share my work",
-      icon: "./card_img/a.svg",
+      icon: "https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
         "With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.",
     },
     {
       id: 2,
       title: "I'm looking to hire a designer",
-      icon: "./card_img/b.svg",
+      icon: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
         "With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.",
     },
     {
       id: 3,
       title: "I'm looking for design inspiration",
-      icon: "./card_img/c.svg",
+      icon: "https://images.unsplash.com/photo-1549545931-59bf067af9ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
         "With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.",
     },
@@ -64,27 +64,27 @@ const Cards = () => {
           explore other options later.
         </p>
       </div>
-      <div className="card-conatiner flex justify-around items-center m:flex-wrap m:p-5">
+      <div className="card-conatiner flex justify-around items-center m:flex-wrap m:p-5 m:gap-10">
         {options.map((option) => (
           <div
             key={option.id}
-            className={`relative border h-[20rem] w-[25rem] max-w-[25rem] border-gray-300 rounded p-4 mb-4 flex flex-col justify-center items-center ${
-              selectedOptions.includes(option) ? "" : ""
+            className={`relative border-[3px] h-[25rem] w-[20rem] max-w-[25rem] rounded-3xl p-4 mb-4 flex flex-col justify-center items-center ${
+              selectedOptions.some((o) => o.id === option.id) ? "border-pink-600" : " border-gray-300"
             }`}
           >
             <div className="product-image transform transition-transform translate-y-[-2.5rem] duration-500 ease-in-out flex flex-col justify-center items-center">
               <img
-                className="w-[150px] h-[150px] fill-pink-600"
+                className={`w-[200px] rounded-full h-[200px] border-[3px] fill-pink-600 ${selectedOptions.some((o) => o.id === option.id) ? "border-pink-600" : " border-gray-300"}`}
                 src={option.icon}
                 alt="img"
               />
               <div className="flex flex-col items-center text-center">
-              <h3 className="font-extrabold text-2xl">
+              <h3 className="font-extrabold text-2xl text-pink-600">
                 {option.title}
               </h3>
               {selectedOptions.some((o) => o.id === option.id) &&
                 option.description && (
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm font-semibold text-gray-400  mb-[5rem]">
                     {option.description}
                   </p>
                 )}
@@ -95,7 +95,7 @@ const Cards = () => {
                 type="checkbox"
                 checked={selectedOptions.some((o) => o.id === option.id)}
                 onChange={() => handleOptionSelect(option)}
-                className="mt-4 w-[25px] h-[25px] focus:ring-transparent border-gray-300 rounded-full text-pink-600"
+                className="mt-4 w-[25px] h-[25px] focus:ring-transparent border-gray-300 rounded-full text-pink-600 absolute bottom-[4rem]"
               />
           </div>
         ))}
