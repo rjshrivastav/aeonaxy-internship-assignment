@@ -1,8 +1,18 @@
-# React + Vite
+# Aeonaxy internship assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This React app utilizes modern web technologies and the React framework to create a seamless user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+Follow these steps to get the project up and running on your local machine:
+
+   ```bash
+   git clone https://github.com/rjshrivastav/aeonaxy-internship-assignment.git
+   cd aeonaxy-internship-assignment
+   npm install
+   npm start
+   ```
+
