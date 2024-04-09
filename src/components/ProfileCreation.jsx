@@ -32,7 +32,7 @@ const ProfileCreation = () => {
 
   const handleNextClick = () => {
     // Handle next button click
-    navigate('/selectcards');
+    navigate('/chooseyouroption');
     // You can navigate to the next page or perform any other action here
   };
 

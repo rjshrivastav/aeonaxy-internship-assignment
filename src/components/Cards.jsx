@@ -8,7 +8,7 @@ const Cards = () => {
 
   const handleNextClick = () => {
     // Handle next button click
-    navigate('/emailvarification');
+    navigate('/varifyemail');
     // You can navigate to the next page or perform any other action here
   };
 
