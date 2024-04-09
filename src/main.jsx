@@ -11,23 +11,23 @@ import SelectCards from './components/SelectCards.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/myapp/",
+    path: "/aeonaxy-internship-assignment/",
     element: <App />,
     children: [
       {
-        path: "/myapp/",
+        path: "/aeonaxy-internship-assignment/",
         element: <SignupPage />,
       },
       {
-        path: "/myapp/createprofile",
+        path: "/aeonaxy-internship-assignment/createprofile",
         element: <SelectAvatar />,
       },
       {
-        path: "/myapp/chooseyouroption",
+        path: "/aeonaxy-internship-assignment/chooseyouroption",
         element: <SelectCards />,
       },
       {
-        path: "/myapp/varifyemail",
+        path: "/aeonaxy-internship-assignment/varifyemail",
         element: <EmailVarify />,
       },
     ],
