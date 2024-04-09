@@ -8,7 +8,7 @@ const SelectCards = () => {
 
   const handleNextClick = () => {
     // Handle next button click
-    navigate('/varifyemail');
+    navigate('/aeonaxy-internship-assignment/varifyemail');
     // You can navigate to the next page or perform any other action here
   };
 

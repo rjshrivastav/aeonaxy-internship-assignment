@@ -27,7 +27,7 @@ const SignupPage = () => {
     e.preventDefault();
     if (formData.username && formData.email && formData.password && !usernameError) {
       // Navigate to the profile creation page
-      navigate('/createprofile');
+      navigate('/aeonaxy-internship-assignment/createprofile');
     } else {
       // Display error message or take other action
       console.error('All fields are required or username is not available');

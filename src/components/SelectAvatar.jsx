@@ -32,7 +32,7 @@ const SelectAvatar = () => {
 
   const handleNextClick = () => {
     // Handle next button click
-    navigate('/chooseyouroption');
+    navigate('/aeonaxy-internship-assignment/chooseyouroption');
     // You can navigate to the next page or perform any other action here
   };
 
