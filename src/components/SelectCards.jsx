@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-const Cards = () => {
+const SelectCards = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const navigate = useNavigate();
 
@@ -115,4 +115,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default SelectCards;

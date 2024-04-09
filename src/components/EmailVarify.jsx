@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 
-const EmailVarification = () => {
+const EmailVarify = () => {
   return (
     <>
     <Header />
@@ -50,4 +50,4 @@ const EmailVarification = () => {
   )
 }
 
-export default EmailVarification
+export default EmailVarify

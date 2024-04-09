@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { useNavigate } from 'react-router-dom';
 
-const ProfileCreation = () => {
+const SelectAvatar = () => {
   const navigate = useNavigate();
   const [avatar, setAvatar] = useState(null);
   const [location, setLocation] = useState("");
@@ -111,4 +111,4 @@ const ProfileCreation = () => {
   );
 };
 
-export default ProfileCreation;
+export default SelectAvatar;
